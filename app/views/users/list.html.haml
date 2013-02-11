@@ -1,0 +1,10 @@
+%h1 Users#list
+%p Find me in app/views/users/list.html.haml
+%h1 Users list
+%table
+  %tr
+    %th Name
+  -@users.each do |user|
+    %tr
+      %td
+        =user[:name]
