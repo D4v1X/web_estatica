@@ -4,6 +4,7 @@ describe 'check users list web' do
     visit users_list_path
   end 
   it "check names" do
+    debugger
     page.should have_content 'Chesco'
     page.should have_content 'Jose'
     page.should have_content 'Alicia'
